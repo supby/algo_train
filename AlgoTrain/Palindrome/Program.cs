@@ -8,6 +8,18 @@ namespace Palindrome
 {
     class Program
     {
+		static bool IsPolindrom(string s)
+		{
+			int i = 0;
+			while (i < s.Length / 2) 
+			{
+				if (s [i] != s [s.Length - 1 - i])
+					return false;
+				i++;
+			}
+			return true;
+		}
+
         static List<string> FindPalindroms(string input, int minLength)
         {
             string reversedInput = string.Empty;
@@ -59,6 +71,8 @@ namespace Palindrome
             {
                 Console.WriteLine(s);
             });
+			Console.WriteLine ("------------------------");
+			Console.WriteLine (IsPolindrom("abccba"));
             Console.ReadLine();
         }
     }

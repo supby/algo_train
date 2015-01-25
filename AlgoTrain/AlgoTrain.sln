@@ -1,11 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
+# Visual Studio 2012
 VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Palindrome", "Palindrome\Palindrome.csproj", "{A3199812-9A45-4224-9590-024E11EC3636}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strings", "Strings\Strings.csproj", "{45290400-68C0-48F7-8A13-E3F0AE2C486A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arrays", "Arrays\Arrays.csproj", "{76E966EC-EA16-43A9-A497-5921751F4332}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trees", "Trees\Trees.csproj", "{63C10EA4-C1E6-4CF9-B5C8-748EE5896A4A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +17,25 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A3199812-9A45-4224-9590-024E11EC3636}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A3199812-9A45-4224-9590-024E11EC3636}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A3199812-9A45-4224-9590-024E11EC3636}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A3199812-9A45-4224-9590-024E11EC3636}.Release|Any CPU.Build.0 = Release|Any CPU
 		{45290400-68C0-48F7-8A13-E3F0AE2C486A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{45290400-68C0-48F7-8A13-E3F0AE2C486A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45290400-68C0-48F7-8A13-E3F0AE2C486A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45290400-68C0-48F7-8A13-E3F0AE2C486A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63C10EA4-C1E6-4CF9-B5C8-748EE5896A4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63C10EA4-C1E6-4CF9-B5C8-748EE5896A4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63C10EA4-C1E6-4CF9-B5C8-748EE5896A4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63C10EA4-C1E6-4CF9-B5C8-748EE5896A4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76E966EC-EA16-43A9-A497-5921751F4332}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76E966EC-EA16-43A9-A497-5921751F4332}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76E966EC-EA16-43A9-A497-5921751F4332}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76E966EC-EA16-43A9-A497-5921751F4332}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3199812-9A45-4224-9590-024E11EC3636}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3199812-9A45-4224-9590-024E11EC3636}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3199812-9A45-4224-9590-024E11EC3636}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3199812-9A45-4224-9590-024E11EC3636}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Arrays\Arrays.csproj
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
