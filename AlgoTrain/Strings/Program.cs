@@ -8,6 +8,23 @@ namespace Strings
 {
     class Program
     {
+        static bool CheckForBalance(string s, List<Tuple<char,char>> symbols)
+        {
+            Dictionary<char, int> state = new Dictionary<char, int>();
+            foreach(Tuple<char,char> t in symbols)
+            {
+                state[t.Item1] = 1;
+                state[t.Item2] = -1;
+            }
+
+            int counter = 0;
+            foreach(char ch in s)
+            {
+                if(state.ContainsKey(ch))
+                    counter += state[ch];
+            }
+            return counter == 0;
+        }
         static IEnumerable<string> SplitStringYield(string s)
         {
             string word = string.Empty;
@@ -57,7 +74,12 @@ namespace Strings
         }
         static void Main(string[] args)
         {
-            Console.WriteLine(ReverseWords("hi everybody"));
+            Console.WriteLine(CheckForBalance("[fdfdfdfdf[dfdfdfd[dddd]vvv]]", new List<Tuple<char, char>>()
+            {
+                new Tuple<char, char>('[', ']'),
+                new Tuple<char, char>('(', ')'),
+                new Tuple<char, char>('{', '}')
+            }));
             Console.ReadLine();
         }
     }
