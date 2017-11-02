@@ -3,6 +3,9 @@
 Created on Thu Oct  5 15:35:33 2017
 
 @author: ASuzanovich
+----------------
+
+Merge overlapping intervals
 """
 
 #intervals = [(1,3), (2,6), (8,10), (15,18)]
