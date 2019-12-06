@@ -35,14 +35,15 @@ def count_groups(mat:[]) -> int:
     return group_count
 
 def mark_group(mat:[], cell: (), visited: {}, height: int, width: int) -> int:
-    for d in [[0,1],[1,0],[0,-1],[-1,0]]:
-        next_cell = (cell[0]+d[0], cell[1]+d[1])
+    for d in [[0,1],[1,0],[0,-1],[-1,0]]:        
+        next_cell = (cell[0]+d[0], cell[1]+d[1])        
         if next_cell[0] > height - 1 or \
             next_cell[0] < 0 or \
             next_cell[1] > width - 1 or \
             next_cell[1] < 0:
-            return
-        if next_cell not in visited and mat[next_cell[0]][next_cell[1]] == 1:            
+            continue
+        
+        if next_cell not in visited and mat[next_cell[0]][next_cell[1]] == 1:
             visited.add(next_cell)
             mark_group(mat, next_cell, visited, height, width)
 
@@ -57,6 +58,8 @@ print(count_groups([[1,1,1],
 print(count_groups([])) # res: 0
 
 print(count_groups(None)) # res: 0
+
+print(count_groups([[1],[1]])) # res: 1
 
 
 
