@@ -40,6 +40,7 @@ print(get_sum([1,2,3,1])) # res: 4
 print(get_sum([2,7,9,3,1])) # res: 12
 print(get_sum([2,7,9,31,1])) # res: 38
 print(get_sum([2,7,9,31,1, 2,7,9,311,1])) # res: 356
+print(get_sum([2,1,1,2])) # res: 4
     
 
     
